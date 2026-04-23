@@ -116,9 +116,10 @@ fi
 if [[ ! -v "_http" ]]; then
   _http="https://${_git_service}.com"
 fi
-_url="${_http}/${_ns}"
 _local="ssh://git@127.0.0.1:/home/git"
-url="${_github}/${_ns}/${_pkg}"
+url="${_http}/${_ns}/${_pkg}"
+# _url="${_http}/${_ns}"
+_url="${url}"
 _tag_name="commit"
 if [[ "${_tag_name}" == "branch" ]]; then
   _tag="${_pkgver}"
