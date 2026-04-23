@@ -34,7 +34,7 @@
 #     <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
 
 # shellcheck disable=SC2034
-os="$(
+_os="$(
   uname \
     -o)"
 if [[ ! -v "_libc" ]]; then
